@@ -1,0 +1,15 @@
+{
+  "name": "interview-questions",
+  "version": "1.0.0",
+  "description": "A collection of interview-related coding questions",
+  "main": "count-the-pairs.js",
+  "dependencies": {
+    "jasmine": "^3.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
