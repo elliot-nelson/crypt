@@ -1,5 +1,5 @@
 /**
- * From: https://buttondown.email/cassidoo/archive/4883db3c-2210-4963-a67d-c4d4a429ea5e
+ * From: https://buttondown.email/cassidoo/archive/its-not-how-everyone-views-you-but-how-you-view/
  *
  * Given an array of integers and a target value, return the number of pairs of array elements
  * that have a difference equal to a target value.
