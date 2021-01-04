@@ -24,9 +24,11 @@ function distance(from, to) {
 // A possible optimization is to start by sorting nodes (hubs) by further distance first, so we
 // prefer to travel more ground.
 //
-// If the networks get complicated (more lights, switches, and hubs), then after 10 or so nodes,
-// you'll want to remove the recursion and replace the body of this function with a breadth-first
-// search.
+// Note that an IoT mesh is likely already human-optimized to avoid as much overlap as possible
+// (the network's purpose is to cover the house with as few nodes as possible). That means this
+// recursive approach is probably efficient enough even for a large, 30-40 hub network, because
+// the number of in-range hubs from each hub is low. Beyond that, you'd want to avoid recursion
+// and do a breadth-first search here instead.
 function isReachable(from, to, nodes) {
     if (distance(from, to) <= 5) return true;
 
