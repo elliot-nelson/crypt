@@ -61,6 +61,9 @@ function largestRect(matrix) {
     // of the loop, if `(w - x) * (h - y) < result` (in other words, if it's impossible at this
     // square to find a rectangle bigger than the current result), you can also skip to the next `y`.
     //
+    // (That last improvement would make a big dent in the worst-case scenario for brute force, which
+    // would be a large matrix almost completely full of 1s.)
+    //
     // For now though, brute force it is :).
 
     return result;
