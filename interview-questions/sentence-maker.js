@@ -53,6 +53,8 @@ describe('makeSentence', function () {
         let str = 'penpineapplepenapple';
         let dict = ['apple', 'pen', 'applepen', 'pine', 'pineapple'];
 
+        // Note: intentionally not caring what the returned order is in the
+        // example (if we did care, we could add some specific sorting).
         expect(makeSentence(str, dict)).toEqual(jasmine.arrayWithExactContents([
             'pen pine apple pen apple',
             'pen pineapple pen apple',
