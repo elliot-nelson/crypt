@@ -29,7 +29,7 @@
 
 function isGameOver(board) {
     for (let marker of ['O', 'X']) {
-        // A player horizontally / vertically?
+        // A player won horizontally / vertically?
         for (let i = 0; i < 3; i++) {
             if (board[i][0] === marker && board[i][1] === marker && board[i][2] === marker) return true;
             if (board[0][i] === marker && board[1][i] === marker && board[2][i] === marker) return true;
@@ -48,7 +48,7 @@ function isGameOver(board) {
 
 // Now we need a way to generate the valid next moves from a given game state. Unlike
 // a more complex game (like Checkers or Chess), we can deduce who's move is it just from
-// the markers already on the board, so a board is a valid game state on its own.a
+// the markers already on the board, so a board is a valid game state on its own.
 
 function validMoves(board) {
     if (isGameOver(board)) return [];
